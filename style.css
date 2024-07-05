@@ -34,9 +34,9 @@ body {
   position: absolute;
 }
 .sect-akhir .kotak {
-  margin-top: -1px;
+  margin-top: -2px;
   width: 96%;
-  height: 96%;
+  height: 90%;
   max-width: 1500px;
   background-color: #c6ebc5;
   border-radius: 0px 0px 50px 50px;
