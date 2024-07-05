@@ -16,7 +16,6 @@ body {
 }
 
 .sect-awal .kotak {
-  width: 96%;
   height: 45%;
   max-width: 1400px;
   background-color: #c6ebc5;
@@ -25,7 +24,6 @@ body {
 }
 
 .sect-tengah .kotak {
-  width: 96%;
   height: 100%;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -35,7 +33,6 @@ body {
 }
 .sect-akhir .kotak {
   margin-top: -2px;
-  width: 96%;
   height: 90%;
   max-width: 1400px;
   background-color: #c6ebc5;
