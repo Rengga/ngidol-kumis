@@ -12,10 +12,9 @@ $(document).ready(function () {
 $(document).on("click", ".menu", function () {
   $(this).addClass("pointer-events-none");
   setTimeout(function () {
-    console.log("sds");
     $(".menu").removeClass("pointer-events-none");
   }, 600);
-  $(".nav-list").fadeToggle("slow");
+  $(".nav-list").toggle("slow");
 });
 
 $(document).on("click", ".nav-list a", function () {
