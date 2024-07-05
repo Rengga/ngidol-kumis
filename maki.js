@@ -17,3 +17,7 @@ $(document).on("click", ".menu", function () {
   }, 600);
   $(".nav-list").fadeToggle("slow");
 });
+
+$(document).on("click", ".nav-list a", function () {
+  $(".nav-list").hide("slow");
+});
