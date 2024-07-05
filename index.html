@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery.js"></script>
+    <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4/src/scss/owl.carousel.scss" />
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss" /> -->
+    <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4/src/scss/owl.theme.green.scss" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="nav fixed w-full h-auto bg-faf px-6 py-2 items-center z-40">
+      <div class="flex justify-between">
+        <h1 class="text-xl">ngidoMaki</h1>
+        <ion-icon name="menu" size="large" class="menu"></ion-icon>
+      </div>
+      <div class="flex flex-col gap-4 py-6 nav-list" style="display: none">
+        <div class="sret w-full bg-black h-[1px]"></div>
+        <a href="">Home</a>
+        <a href="">Price</a>
+        <a href="">Do/Dont</a>
+        <a href="">Contact</a>
+        <a href="">Queue</a>
+      </div>
+    </div>
+    <div class="footer flex justify-center w-full fixed bottom-0 z-40">
+      <a href="#home"
+        ><div class="bg-up"><ion-icon name="chevron-up" size="large" class="text-white"></ion-icon></div
+      ></a>
+    </div>
+
+    <div class="sect-awal w-full h-screen relative" id="home">
+      <div class="belakang absolute w-full h-full flex justify-center">
+        <div class="kotak m-auto bottom-0"></div>
+      </div>
+      <div class="depan relative z-10 w-full h-full flex justify-center items-center p-8">
+        <div class="">
+          <h1 class="font-bold text-6xl text-center mb-5">Welcome to <span class="text-emerald-400">ngidolMaki Page</span></h1>
+          <div class="flex w-full justify-center gap-4 mt-12 mb-24">
+            <a href="https://twitter.com/ngidolMaki_" target="_blank"
+              ><div class="bg-sosmed"><ion-icon name="logo-twitter" class="logo-sosmed"></ion-icon>Twitter</div></a
+            >
+            <a href="https://www.instagram.com/ngidolmaki/" target="_blank"
+              ><div class="bg-sosmed"><ion-icon name="logo-instagram" class="logo-sosmed"></ion-icon>Instagram</div></a
+            >
+          </div>
+          <div class="owl-carousel w-80 mt-8 m-auto">
+            <img src="asset/ic-cat.webp" alt="" class="w-3/5 h-64 object-cover img-owl" />
+            <img src="asset/kbo.webp" alt="" class="w-3/5 h-64 object-cover img-owl" />
+            <img src="asset/zeyaya-lndscpe.webp" alt="" class="w-3/5 h-64 object-cover img-owl" />
+            <img src="asset/zyhbd.webp" alt="" class="w-3/5 h-64 object-cover img-owl" />
+          </div>
+          <a href="" class="flex justify-center w-full mt-16"
+            ><div class="w-10 h-10 rounded rounded-full bg-white flex justify-center items-center">
+              <ion-icon name="chevron-down" class="btn-next"></ion-icon>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sect-tengah w-full h-screen relative">
+      <div class="belakang absolute w-full h-full flex justify-center">
+        <div class="kotak m-auto"></div>
+      </div>
+      <div class="depan relative z-10 w-full h-full flex flex-col justify-center items-center p-8">
+        <h1 class="font-bold text-3xl text-center mb-5">
+          Portofolio <span class="text-emerald-400 underline">Komisi</span> dan <span class="text-emerald-400 underline">Harga</span>
+        </h1>
+        <div class="flex flex-col w-full h-full">
+          <img src="asset/Frame-2.webp" alt="" class="w-full img-owl h-fit object-contain" />
+          <div class="">
+            <span class="font-bold"><h1>Information</h1></span>
+
+            <div class="">
+              <span class="font-bold">Draw :</span> <br />
+              1. CloseUp <br />
+              2. HALFBODY <br />
+              3. FULLBODY <br />
+              *No background but simple background no problem <br /><br />
+            </div>
+            <div class="bg-lime rounded rounded-lg p-4 border-2 border-white">
+              <h1 class="font-bold text-xl italic">COMERCIAL USE X2 PRICE</h1>
+              <div>
+                <span class="font-bold">Payment by : </span>
+                <div class="flex flex-row gap-1">
+                  <div>1.</div>
+                  <div>Paypal</div>
+                </div>
+                <div class="flex flex-row gap-1">
+                  <div>2.</div>
+                  <div>for local ( Indonesia ) Use BCA or GoPay 1$ = 12k</div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="">
+              <span class="font-bold">DO :</span> <br />
+              Original Character, Fanart, Couple/Group, etc (but ask first) <br /><br />
+              <span class="font-bold">DONT :</span> <br />
+              Gore, NSFW/Echi/Hentai, Mecha/Robot, Armo
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sect-akhir w-full h-screen relative">
+      <div class="belakang absolute w-full h-full flex justify-center pb-12">
+        <div class="kotak m-auto top-0"></div>
+      </div>
+    </div>
+  </body>
+  <script src="maki.js"></script>
+</html>
