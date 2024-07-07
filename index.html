@@ -37,9 +37,16 @@
   </head>
   <body>
     <div class="nav fixed w-full h-auto bg-faf px-6 py-2 items-center z-40">
-      <div class="flex justify-between">
-        <h1 class="text-xl">ngidolMaki</h1>
-        <ion-icon name="menu" size="large" class="menu cursor-pointer"></ion-icon>
+      <div class="flex justify-between max-w-[1400px] m-auto items-center">
+        <h1 class="text-xl md:text-2xl leading-normal">ngidolMaki</h1>
+        <ion-icon name="menu" size="large" class="menu cursor-pointer md:hidden"></ion-icon>
+        <div class="nav-list-desktop leading-normal hidden md:flex md:flex-row gap-10 max-h-[30px]">
+          <a href="#home">Home</a>
+          <a href="#price">Price</a>
+          <a href="#dodont">Do/Dont</a>
+          <a href="#contact">Contact</a>
+          <a href="">Queue</a>
+        </div>
       </div>
       <div class="flex flex-col gap-4 py-6 nav-list" style="display: none">
         <div class="sret w-full bg-black h-[1px]"></div>
@@ -62,7 +69,7 @@
       </div>
       <div class="depan relative z-10 w-full h-full flex justify-center items-center p-8">
         <div class="mt-[80px]">
-          <h1 class="font-bold text-5xl text-center mb-5">Welcome to <span class="text-emerald-400">ngidolMaki Page</span></h1>
+          <h1 class="font-bold text-5xl md:text-7xl text-center mb-5">Welcome to <span class="text-emerald-400">ngidolMaki Page</span></h1>
           <div class="flex w-full justify-center gap-4 mt-12 mb-24">
             <a href="https://twitter.com/ngidolMaki_" target="_blank"
               ><div class="bg-sosmed"><ion-icon name="logo-twitter" class="logo-sosmed"></ion-icon>Twitter</div></a
@@ -71,11 +78,10 @@
               ><div class="bg-sosmed"><ion-icon name="logo-instagram" class="logo-sosmed"></ion-icon>Instagram</div></a
             >
           </div>
-          <div class="owl-carousel w-80 mt-8 m-auto">
-            <img src="asset/ic-cat.webp" alt="" class="w-3/5 h-64 object-cover img-owl" />
-            <img src="asset/kbo.webp" alt="" class="w-3/5 h-64 object-cover img-owl" />
-            <img src="asset/zeyaya-lndscpe.webp" alt="" class="w-3/5 h-64 object-cover img-owl" />
-            <img src="asset/zyhbd.webp" alt="" class="w-3/5 h-64 object-cover img-owl" />
+          <div class="owl-carousel w-80 md:w-[600px] lg:w-[1000px] mt-8 md:mt-4 m-auto">
+            <img src="asset/ic-cat.webp" alt="" class="w-3/5 h-64 md:h-80 lg:h-96 object-cover img-owl" />
+            <img src="asset/zeyaya-lndscpe.webp" alt="" class="w-3/5 h-64 md:h-80 lg:h-96 object-cover img-owl" />
+            <img src="asset/zyhbd.webp" alt="" class="w-3/5 h-64 md:h-80 lg:h-96 object-cover img-owl" />
           </div>
           <a href="#price" class="flex justify-center w-full"
             ><div class="w-10 h-10 rounded rounded-full bg-white flex justify-center items-center">
@@ -90,23 +96,33 @@
       <div class="belakang absolute w-full h-full flex justify-center">
         <div class="kotak m-auto w-[96%] md:w-full"></div>
       </div>
-      <div class="depan relative z-10 w-full h-full flex flex-col justify-center items-center px-8 py-12">
-        <h1 class="font-bold text-3xl text-center mb-5">Portofolio <span class="">Commission</span> and <span class="">Price</span></h1>
+      <div class="depan relative z-10 w-full h-full flex flex-col justify-center items-center px-8 md:px-16 py-12">
+        <h1 class="font-bold text-3xl md:text-5xl text-center mb-5">Portofolio <span class="">Commission</span> and <span class="">Price</span></h1>
         <div class="flex flex-col w-full h-full">
-          <img src="asset/Frame-2.webp" alt="" class="w-full img-owl h-fit object-contain" />
-          <div class="">
-            <span class="font-bold"><h1>Information</h1></span>
-
-            <div class="">
-              <span class="font-bold">Draw :</span> <br />
-              1. CloseUp <br />
-              2. HALFBODY <br />
-              3. FULLBODY <br />
-              *No background but simple background no problem <br /><br />
+          <div class="flex justify-center w-full">
+            <img src="asset/Frame-2.webp" alt="" class="w-full md:w-6/12 img-owl h-fit object-contain" />
+          </div>
+          <div class="md:flex md:flex-col md:items-center">
+            <span class="font-bold md:text-xl md:mb-4"><h1>Information</h1></span>
+            <div class="md:flex md:flex-row md:gap-4 md:mb-12">
+              <div class="md:text-lg md:w-1/2">
+                <span class="font-bold">Draw :</span> <br />
+                1. CloseUp <br />
+                2. HALFBODY <br />
+                3. FULLBODY <br />
+                *No background but simple background no problem <br /><br />
+              </div>
+              <div class="hidden md:flex w-1 h-auto rounded bg-emerald-600"></div>
+              <div class="md:text-lg mb-12 md:mb-0 md:w-1/2" id="dodont">
+                <span class="font-bold">DO :</span> <br />
+                Original Character, Fanart, Couple/Group, etc (but ask first) <br /><br />
+                <span class="font-bold">DONT :</span> <br />
+                Gore, NSFW/Echi/Hentai, Mecha/Robot, Armor
+              </div>
             </div>
             <div class="bg-lime rounded rounded-lg p-4 border-2 border-white">
-              <h1 class="font-bold text-xl italic">COMERCIAL USE X2 PRICE</h1>
-              <div>
+              <h1 class="font-bold text-xl md:text-2xl italic">COMERCIAL USE X2 PRICE</h1>
+              <div class="md:text-lg">
                 <span class="font-bold">Payment by : </span>
                 <div class="flex flex-row gap-1">
                   <div>1.</div>
@@ -119,32 +135,26 @@
               </div>
             </div>
             <br />
-            <div class="" id="dodont">
-              <span class="font-bold">DO :</span> <br />
-              Original Character, Fanart, Couple/Group, etc (but ask first) <br /><br />
-              <span class="font-bold">DONT :</span> <br />
-              Gore, NSFW/Echi/Hentai, Mecha/Robot, Armor
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="sect-akhir w-full h-96 max-w-[1400px] m-auto relative pb-12" id="contact">
+    <div class="sect-akhir w-full h-96 max-w-[1400px] m-auto relative pb-12 flex justify-center" id="contact">
       <div class="belakang absolute w-full h-full flex justify-center pb-12 mb-12">
         <div class="kotak m-auto top-0 w-[96%] md:w-full"></div>
       </div>
-      <div class="depan relative z-10 w-full h-full flex flex-col justify-end items-center p-8">
-        <div class="absolute bottom-8 h-80 right-2">
+      <div class="depan relative z-10 w-full md:max-w-[1100px] h-full flex flex-col justify-end items-center p-8 md:px-16">
+        <div class="absolute bottom-8 h-80 right-2 md:z-20">
           <img src="asset/Mask group.webp" alt="" class="object-contain h-full" />
         </div>
-        <div class="bg-lime border-2 flex flex-col gap-4 border-white w-full p-3 rounded rounded-lg relative z-10">
+        <div class="bg-lime border-2 flex flex-col gap-4 border-white w-full p-3 rounded rounded-lg relative z-10 md:text-lg">
           <span class="font-bold">For more details, you can contact us via :</span>
           <div class="flex flex-row gap-0">
-            <div class="min-w-14">Email :</div>
+            <div class="min-w-16">Email :</div>
             <div>ngidolmaki@gmail.com or renggaarnanta@gmail.com</div>
           </div>
           <div class="flex flex-row gap-0">
-            <div class="w-24">Instagram :</div>
+            <div class="w-24 md:w-28">Instagram :</div>
             <div>@ngidolmaki</div>
           </div>
         </div>
