@@ -17,7 +17,7 @@ body {
 
 .sect-awal .kotak {
   height: 45%;
-  max-width: 1400px;
+  max-width: 1300px;
   background-color: #c6ebc5;
   border-radius: 50px 50px 0 0;
   position: absolute;
@@ -27,14 +27,14 @@ body {
   height: 100%;
   margin-top: -1px;
   margin-bottom: -1px;
-  max-width: 1400px;
+  max-width: 1300px;
   background-color: #c6ebc5;
   position: absolute;
 }
 .sect-akhir .kotak {
   margin-top: -2px;
   height: 90%;
-  max-width: 1400px;
+  max-width: 1300px;
   background-color: #c6ebc5;
   border-radius: 0px 0px 50px 50px;
   position: absolute;
