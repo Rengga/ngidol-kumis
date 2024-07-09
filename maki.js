@@ -37,6 +37,16 @@ $(document).on("click", ".menu", function () {
   $(".nav-list").toggle("slow");
 });
 
-$(document).on("click", ".nav-list a", function () {
+$(document).on("click", ".nav-list a, .nav-list span", function () {
   $(".nav-list").hide("slow");
+});
+
+$(document).on("click", ".btn-queue", function () {
+  $("body").addClass("overflow-hidden");
+  $(".queue").slideDown("slow");
+});
+
+$(document).on("click", ".tutup", function () {
+  $("body").removeClass("overflow-hidden");
+  $(".queue").slideUp("slow");
 });

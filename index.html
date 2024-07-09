@@ -48,7 +48,7 @@
           <a href="#price">Price</a>
           <a href="#dodont">Do/Dont</a>
           <a href="#contact">Contact</a>
-          <a href="">Queue</a>
+          <span class="btn-queue">Queue</span>
         </div>
       </div>
       <div class="flex flex-col gap-4 py-6 nav-list" style="display: none">
@@ -57,13 +57,22 @@
         <a href="#price">Price</a>
         <a href="#dodont">Do/Dont</a>
         <a href="#contact">Contact</a>
-        <a href="">Queue</a>
+        <span class="btn-queue">Queue</span>
       </div>
     </div>
     <div class="footer flex justify-center w-full fixed bottom-0 z-40">
       <a href="#home"
         ><div class="bg-up"><ion-icon name="chevron-up" size="large" class="text-white"></ion-icon></div
       ></a>
+    </div>
+    <div class="queue fixed w-full h-screen bg-006 z-30" style="display: none">
+      <div class="flex flex-col w-full px-12 pt-[80px] mb-12 h-full justify-center items-center">
+        <div class="bg-lime rounded rounded-lg py-1 px-4 tutup mb-6 cursor-pointer">Close</div>
+        <div class="bg-white rounded rounded-lg w-full p-12">
+          <div class="font-bold text-xl">Order Queue</div>
+          <span>-No order-</span>
+        </div>
+      </div>
     </div>
 
     <div class="sect-awal w-full max-w-[1300px] m-auto h-screen relative" id="home">
@@ -133,7 +142,7 @@
                 </div>
                 <div class="flex flex-row gap-1">
                   <div>2.</div>
-                  <div>for local ( Indonesia ) Use BCA or GoPay 1$ = 12k</div>
+                  <div>For local ( Indonesia ) Use BCA or GoPay 1$ = 12k</div>
                 </div>
               </div>
             </div>
