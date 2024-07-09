@@ -37,7 +37,7 @@ $(document).on("click", ".menu", function () {
   $(".nav-list").toggle("slow");
 });
 
-$(document).on("click", ".nav-list a, .nav-list span", function () {
+$(document).on("click", ".navbar-list a, .navbar-list span", function () {
   $(".nav-list").hide("slow");
 });
 
@@ -47,6 +47,11 @@ $(document).on("click", ".btn-queue", function () {
 });
 
 $(document).on("click", ".tutup", function () {
+  $("body").removeClass("overflow-hidden");
+  $(".queue").slideUp("slow");
+});
+
+$(document).on("click", ".navbar-list a", function () {
   $("body").removeClass("overflow-hidden");
   $(".queue").slideUp("slow");
 });
