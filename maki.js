@@ -7,7 +7,27 @@ $(document).ready(function () {
     autoplayTimeout: 2000,
     autoplayHoverPause: false,
   });
+
+  if ($(".menu").is(":visible")) {
+    $(".nav").addClass("bg-faf");
+  }
+
+  scroll();
 });
+
+function scroll() {
+  $(window).scroll(function () {
+    let scroll = $(window).scrollTop();
+    if (scroll > 10) {
+      $(".nav").addClass("bg-faf");
+    } else {
+      $(".nav").removeClass("bg-faf");
+      if ($(".menu").is(":visible")) {
+        $(".nav").addClass("bg-faf");
+      }
+    }
+  });
+}
 
 $(document).on("click", ".menu", function () {
   $(this).addClass("pointer-events-none");
