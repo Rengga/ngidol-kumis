@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #c6ebc5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #006769;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #11888a;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -90,4 +110,60 @@ body {
   align-items: center;
   gap: 4px;
   margin-bottom: -6px;
+}
+
+.popup-iklan {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.popup-iklan-show {
+  animation: ani-popup-show 1s running;
+}
+
+.popup-iklan-close {
+  animation: ani-popup-close 1s alternate;
+}
+.lft-minus-42 {
+  left: -42px;
+}
+@keyframes ani-popup-show {
+  0% {
+    left: -42px;
+  }
+  50% {
+    left: -20px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes ani-popup-close {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -42px;
+  }
+}
+.border-putih {
+  border: 1px solid white;
+  border-left: unset;
+}
+
+.iklan {
+  background: rgba(0, 103, 105, 0.8);
+}
+
+/* -----------porto------ */
+.img-porto:hover {
+  /* width: 170px;
+  height: 550px; */
+  /* object-position: 50%; */
+}
+.img-porto {
+  transition: 0.2s;
+}
+img {
+  image-rendering: auto;
 }

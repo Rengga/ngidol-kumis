@@ -34,6 +34,9 @@
     ></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
     <div class="nav fixed w-full h-auto bg----faf px-6 py-2 items-center z-40">
@@ -48,6 +51,7 @@
           <a href="#price">Price</a>
           <a href="#dodont">Do/Dont</a>
           <a href="#contact">Contact</a>
+          <a href="./porto.html">Portofolio</a>
           <span class="btn-queue">Queue</span>
         </div>
       </div>
@@ -57,6 +61,7 @@
         <a href="#price">Price</a>
         <a href="#dodont">Do/Dont</a>
         <a href="#contact">Contact</a>
+        <a href="./porto.html">Portofolio</a>
         <span class="btn-queue">Queue</span>
       </div>
     </div>
@@ -74,6 +79,22 @@
         </div>
       </div>
     </div>
+    <div class="popup-iklan flex justify-center items-center top-1/2 w-7 md:w-10 h-12 bg-006 my-auto fixed z-40 cursor-pointer popup-iklan-show">
+      <i class="bx bx-lemon text-xl md:text-2xl bx-tada text-white bx-rotate-180"></i>
+    </div>
+    <div class="iklan w-full h-screen z-50 fixed px-2 py-4 flex justify-center items-center" style="display: none">
+      <div class="bg-white items-center w-full md:w-8/12 h-8/12 m-auto rounded rounded-xl p-4 gap-2 justify-center">
+        <div class="w-full flex justify-end">
+          <button class="text-white font-bold bg-emerald-800 py-1 px-4 rounded rounded-full close-iklan">Close</button>
+        </div>
+        <div class="flex flex-col justify-center items-center h-full w-full">
+          <img src="asset/poster.png" alt="" class="object-contain w-full md:h-[300px] lg:h-[400px]" width="" />
+          <a href="https://www.tokopedia.com/knectar" target="_blank"
+            ><button class="text-white font-bold bg-emerald-800 py-1 px-4 rounded rounded-full">Mari Mampir</button></a
+          >
+        </div>
+      </div>
+    </div>
 
     <div class="sect-awal w-full max-w-[1300px] m-auto h-screen relative" id="home">
       <div class="belakang absolute w-full h-full flex justify-center">
@@ -88,6 +109,9 @@
             >
             <a href="https://www.instagram.com/ngidolmaki/" target="_blank"
               ><div class="bg-sosmed"><ion-icon name="logo-instagram" class="logo-sosmed"></ion-icon>Instagram</div></a
+            >
+            <a href="https://www.tokopedia.com/knectar" target="_blank"
+              ><div class="bg-sosmed"><img src="asset/tokopedia.svg" alt="" width="16px" /> Tokopedia</div></a
             >
           </div>
           <div class="owl-carousel w-80 md:w-[600px] lg:w-[1000px] mt-8 md:mt-4 m-auto">

@@ -44,14 +44,28 @@ $(document).on("click", ".navbar-list a, .navbar-list span", function () {
 $(document).on("click", ".btn-queue", function () {
   $("body").addClass("overflow-hidden");
   $(".queue").slideDown("slow");
+  $(".popup-iklan").addClass("border-putih");
 });
 
 $(document).on("click", ".tutup", function () {
   $("body").removeClass("overflow-hidden");
   $(".queue").slideUp("slow");
+  $(".popup-iklan").removeClass("border-putih");
 });
 
 $(document).on("click", ".navbar-list a", function () {
   $("body").removeClass("overflow-hidden");
   $(".queue").slideUp("slow");
+});
+
+$(document).on("click", ".popup-iklan", function () {
+  $(this).addClass("popup-iklan-close").removeClass("popup-iklan-show");
+  setTimeout(() => {
+    $(this).addClass("lft-minus-42");
+  }, 1000);
+  $(".iklan").fadeIn("fast");
+});
+$(document).on("click", ".close-iklan", function () {
+  $(".popup-iklan").removeClass("popup-iklan-close lft-minus-42").addClass("popup-iklan-show");
+  $(".iklan").fadeOut("fast");
 });

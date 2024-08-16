@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-6">
+    <a href="./index.html"><button class="slot rounded rounded-md py-1 px-2 bg-emerald-600 text-white w-fit mb-5">Back</button></a>
+    <h1 class="font-bold text-5xl md:text-7xl text-center mb-5">Portofolio</h1>
+    <div class="flex image-container flex-wrap justify-center gap-4"></div>
+    <div class="min-h-[200px]"></div>
+  </body>
+</html>
+<script>
+  let images = [
+    "porto (1).webp",
+    "porto (2).webp",
+    "porto (3).webp",
+    "porto (4).webp",
+    "porto (5).webp",
+    "porto (6).webp",
+    "porto (7).webp",
+    "porto (8).webp",
+    "porto (9).webp",
+    "porto (10).webp",
+    "porto (11).webp",
+    "porto (12).webp",
+    "porto (13).webp",
+    "porto (14).webp",
+  ];
+
+  $(document).ready(function () {
+    $.each(images, function (i, v) {
+      var imgPath = "asset/img/" + v;
+      $(".image-container").append(
+        '<div class="w-[160px] h-[404px] md:w-[200px] md:h-[504px] bg-white border-2 border-black"><img src="' +
+          imgPath +
+          '" class="w-[160px] h-[400px] md:w-[200px] md:h-[500px] object-cover img-porto"> </div>'
+      );
+    });
+  });
+</script>
