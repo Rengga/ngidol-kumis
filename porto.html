@@ -12,7 +12,7 @@
   <body class="p-6">
     <a href="./index.html"><button class="slot rounded rounded-md py-1 px-2 bg-emerald-600 text-white w-fit mb-5">Home</button></a>
     <h1 class="font-bold text-5xl md:text-7xl text-center mb-5">Portofolio</h1>
-    <div class="flex image-container flex-wrap justify-center gap-4"></div>
+    <div class="flex image-container flex-wrap justify-center gap-4 hidden"></div>
     <div class="min-h-[200px]"></div>
   </body>
 </html>
@@ -42,6 +42,7 @@
           imgPath +
           '" class="w-[160px] h-[400px] md:w-[200px] md:h-[500px] object-cover img-porto"> </div>'
       );
+      $(".image-container").removeClass("hidden");
     });
   });
 </script>
